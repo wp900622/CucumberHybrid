@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="82.189">
+    <testcase classname="Beer cans" name="Logging" time="18.48">
+        <system-out><![CDATA[Given user navigate to the login page.......................................passed
+When User enters valid email address "wp900622@gmail.com" into the email field.passed
+And User enters valid password "12345" into the password field..............passed
+And User clicks on the login button.........................................passed
+Then user should be logged in...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Beer cans" name="Logging in with invalid credentials" time="22.685">
+        <system-out><![CDATA[Given user navigate to the login page.......................................passed
+When User enters valid email address "wp900622@gmail.com" into the email field.passed
+And User enters invalid password " " into the password field................passed
+And User clicks on the login button.........................................passed
+Then user should get an error message about invalid credentials.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Registering a new user" name="User registers with valid data" time="16.025">
+        <system-out><![CDATA[Given user navigate to the register page....................................passed
+When user enters "John" into the first name field...........................passed
+And user enters "Doe" into the last name field..............................passed
+And user enters "johndoe@gmail.com" into the email field....................passed
+And user enters "123456789" into the telephone field........................passed
+And user enters "123456"  into the password field...........................passed
+And user enters "123456" into the password confirm field....................passed
+And user clicks on the privacy policy checkbox..............................passed
+And user clicks on the continue button......................................passed
+Then user should be registered successfully.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Add new item to the cart" name="Add new item to the cart" time="24.772">
+        <system-out><![CDATA[Given User navigate to the Phones&PDAs page.................................passed
+When I click on the iPhone link.............................................passed
+And I enter 1 in the quantity field.........................................passed
+And I click on the Add to cart button.......................................passed
+Then I should see the Item added to cart message............................passed
+And I click cart button.....................................................passed
+Then I should see the item in the cart......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

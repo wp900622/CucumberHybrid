@@ -61,6 +61,12 @@ public class Register {
         element.sendKeys(LastName);
         //Thread.sleep(1000);
     }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 634daf8 (first commit)
     @And("user enters {string} into the email field")
     public void userEntersIntoTheEmailField(String email) throws InterruptedException {
         //尋找email的元素並輸入email
@@ -68,6 +74,12 @@ public class Register {
         element.sendKeys(email);
         //Thread.sleep(1000);
     }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 634daf8 (first commit)
     @And("user enters {string} into the telephone field")
     public void userEntersIntoTheTelephoneField(String telephone) throws InterruptedException {
         //尋找telephone的元素並輸入telephone
@@ -75,6 +87,11 @@ public class Register {
         element.sendKeys(telephone);
         //Thread.sleep(1000);
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 634daf8 (first commit)
     @And("user enters {string}  into the password field")
     public void userEntersIntoThePasswordField(String password) throws InterruptedException {
         //尋找password的元素並輸入password

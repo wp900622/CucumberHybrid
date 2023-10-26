@@ -28,7 +28,7 @@ public class Cart {
         options.addArguments("--remote-allow-origins=*");
         //增加參數--headless,以防止跑測試時跳出瀏覽器
         options.addArguments("--headless");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         //driver等待15000毫秒後進入網址以方便找尋網頁元素
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(4000));
         //進入網址內容

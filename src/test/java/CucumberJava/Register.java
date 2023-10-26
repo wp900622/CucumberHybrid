@@ -107,11 +107,28 @@ public class Register {
         //Thread.sleep(1000);
     }
 
-    @Then("user should be registered successfully")
+    @Then("user should be registered fail")
     public void userShouldBeRegisteredSuccessfully() {
         //確認是否註冊失敗
         Assert.assertTrue(driver.findElement(By.xpath(
                 "//div[contains(@class,'alert-dismissible')]")).getText().
                 contains("Warning: E-Mail Address is already registered!"));
+    }
+
+    @And("The message of Password confirmation does not match password! will display")
+    public void theMessageOfPasswordConfirmationDoesNotMatchPasswordWillDisplay() {
+        Assert.assertTrue(driver.findElement(By.className("text-danger")).getText().contains("Password confirmation does not match password!"));
+    }
+
+    @Then("the message of You must agree to the Privacy Policy! will display")
+    public void theMessageOfYouMustAgreeToThePrivacyPolicyWillDisplay() {
+        Assert.assertTrue(driver.findElement(By.xpath(
+                        "//div[contains(@class,'alert-dismissible')]")).getText().
+                contains("Warning: You must agree to the Privacy Policy!"));
+    }
+
+    @And("the message of Telephone must be between 3 and 32 characters! will display")
+    public void theMessageOfTelephoneMustBeBetweenAndCharactersWillDisplay() {
+        Assert.assertTrue(driver.findElement(By.className("text-danger")).getText().contains("Telephone must be between 3 and 32 characters!"));
     }
 }

@@ -19,4 +19,17 @@ Feature: Beer cans
     Then user should get an error message about invalid credentials
 
 
+  Scenario: Logging in with invalid credentials
+    Given user navigate to the login page
+    When User enters valid email address " " into the email field
+    And User enters invalid password " " into the password field
+    And User clicks on the login button
+    Then user should get an error message about invalid credentials
+
+  Scenario: Logging in with invalid credentials
+    Given user navigate to the login page
+    When User enters valid email address " " into the email field
+    And User enters invalid password "12345" into the password field
+    And User clicks on the login button
+    Then user should get an error message about invalid credentials
 

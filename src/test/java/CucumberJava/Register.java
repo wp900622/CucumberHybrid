@@ -25,7 +25,7 @@ public class Register {
         System.out.println("This will run before the Scenario");
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
         //設定程式內chromedriver的路徑,這樣才能執行chromedriver
-        System.setProperty("webdriver.chrome.driver","D:\\java_demo\\chromedriver-win64\\chromedriver.exe");
+       
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--headless");

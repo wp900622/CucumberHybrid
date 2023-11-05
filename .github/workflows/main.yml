@@ -22,8 +22,7 @@ jobs:
                   
     - name: setup-chromedriver     
       uses: nanasess/setup-chromedriver@v2.2.0
-    - uses: browser-actions/setup-chrome@latest
-    - run:  chrome --version
+    
     - uses: browser-actions/setup-chrome@v1
       with:
         chrome-version: beta

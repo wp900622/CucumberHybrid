@@ -17,7 +17,9 @@ jobs:
             java-version: 17.0
             distribution: "temurin"
             architecture: "x64"
-                     
+                      
+      - name: setup-chromedriver
+        uses: nanasess/setup-chromedriver@v2.2.0
       - name: Setup Maven Action              
         uses: s4u/setup-maven-action@v1.10.0     
       - name: Build with Maven

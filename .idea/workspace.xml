@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64963f71-6d99-492e-8c81-f78a515571fe" name="Changes" comment="second commit" />
+    <list default="true" id="64963f71-6d99-492e-8c81-f78a515571fe" name="Changes" comment="second commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CucumberJava/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CucumberJava/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CucumberJava/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CucumberJava/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CucumberJava/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CucumberJava/Register.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +72,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java_demo" />
       <recent name="D:\java_demo\src\test\resources\features" />
       <recent name="D:\java_demo\src\test\java\CucumberJava" />
     </key>
@@ -232,6 +238,9 @@
       <workItem from="1698045176930" duration="1578000" />
       <workItem from="1698239170396" duration="4813000" />
       <workItem from="1698278550337" duration="1333000" />
+      <workItem from="1698285173242" duration="2314000" />
+      <workItem from="1698332352405" duration="170000" />
+      <workItem from="1699185897163" duration="811000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1697988805124</created>

@@ -21,7 +21,7 @@ public class Cart {
     public  void beforeScenario(){
         System.out.println("This will run before the Scenario");
         //設定程式內chromedriver的路徑,這樣才能執行chromedriver
-        System.setProperty("webdriver.chrome.driver","D:\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","D:\\java_demo\\chromedriver-win64\\chromedriver.exe");
         //設定chromedriver的參數
         ChromeOptions options = new ChromeOptions();
         //增加參數--remote-allow-origins=*,以防止跨域問題

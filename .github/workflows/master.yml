@@ -15,8 +15,10 @@ jobs:
         uses: actions/setup-java@v
         with: 
             java-version: 17.0
-            distribution: "oracle"
+            distribution: "temurin"
             architecture: "x64"
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
       - name: Run the Maven verify phase
         run: mvn clean install
       - name: Run Tests

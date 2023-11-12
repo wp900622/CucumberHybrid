@@ -51,3 +51,16 @@ Feature: Registering a new user
     And user clicks on the continue button
     Then user should be registered fail
     And the message of Telephone must be between 3 and 32 characters! will display
+
+  Scenario: User registers with valid data
+    Given user navigate to the register page
+    When user enters "John" into the first name field
+    And user enters "Doe" into the last name field
+    And user enters "johndoe@gmail.com" into the email field
+    And user enters "123456789" into the telephone field
+    And user enters " "  into the password field
+    And user enters " " into the password confirm field
+    And user clicks on the privacy policy checkbox
+    And user clicks on the continue button
+    Then user should be registered fail
+    And the message of Password must be between 4 and 20 characters!

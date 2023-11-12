@@ -25,7 +25,7 @@ public class Register {
         System.out.println("This will run before the Scenario");
 //        System.setProperty("webdriver.chrome.whitelistedIps", "");
         //設定程式內chromedriver的路徑,這樣才能執行chromedriver
-        System.setProperty("webdriver.chrome.driver","D:\\java_demo\\chromedriver-win64\\chromedriver.exe");
+      //  System.setProperty("webdriver.chrome.driver","D:\\Downloads\\chromedriver-win64 (2)\\chromedriver-win64\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--headless");
@@ -130,5 +130,10 @@ public class Register {
     @And("the message of Telephone must be between 3 and 32 characters! will display")
     public void theMessageOfTelephoneMustBeBetweenAndCharactersWillDisplay() {
         Assert.assertTrue(driver.findElement(By.className("text-danger")).getText().contains("Telephone must be between 3 and 32 characters!"));
+    }
+
+    @And("the message of Password must be between 4 and 20 characters!")
+    public void theMessageOfPasswordMustBeBetweenAndCharacters() {
+        Assert.assertTrue(driver.findElement(By.className("text-danger")).getText().contains("Password must be between 4 and 20 characters!"));
     }
 }

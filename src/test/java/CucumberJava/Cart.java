@@ -21,7 +21,7 @@ public class Cart {
     public  void beforeScenario(){
         System.out.println("This will run before the Scenario");
         //設定程式內chromedriver的路徑,這樣才能執行chromedriver
-        System.setProperty("webdriver.chrome.driver","D:\\java_demo\\chromedriver-win64\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver","D:\\Downloads\\chromedriver-win64 (2)\\chromedriver-win64\\chromedriver.exe");
         //設定chromedriver的參數
         ChromeOptions options = new ChromeOptions();
         //增加參數--remote-allow-origins=*,以防止跨域問題
@@ -89,4 +89,35 @@ public class Cart {
                 getText().contains("iPhone"));
 
     }
+
+    @And("the total price is 123.20")
+    public void thePriceIs() {
+        Assert.assertTrue(driver.findElement(By.xpath("//td[text()='$123.20']")).getText().contains("$123.20"));
+    }
+
+    @And("I will see the quantity field is x1")
+    public void iWillSeeTheQuantityFieldIsX() {
+        Assert.assertTrue(driver.findElement(By.xpath("//td[text()='x1']")).getText().contains("x1"));
+    }
+
+    @When("I click on cart button")
+    public void iClickOnCartButton() {
+        WebElement element = driver.findElement(By.xpath("//button[@class='btn " +
+                "btn-inverse btn-block btn-lg dropdown-toggle']"));
+        element.click();
+    }
+
+    @Then("I should see the message that Your shopping cart is empty!")
+    public void iShouldSeeTheMessageThatYourShoppingCartIsEmpty() {
+        Assert.assertTrue(driver.findElement(By.xpath("//p[text()='Your shopping cart is empty!']")).getText().contains("Your shopping cart is empty!"));
+    }
+
+    @When("I click the cancel button")
+    public void iClickTheCancelButton() {
+        WebElement element = driver.findElement(By.xpath("//button[@title='Remove']"));
+        element.click();
+    }
+
+
+
 }
